@@ -62,6 +62,7 @@ public class DataStructures {
 
         // TreeSet implements everything that a HashSet does and apart from that, you can control the order using
         // an interface called Comparable in the class that is used to store
+        // Does not add same value to list twice (Remember during sorting questions)
         TreeSet<Olive> olives1 = new TreeSet<>();
         // Will throw exception as set needs to implement an interface by the name of Comparable
         olives1.add(new Olive(OliveName.LIGURIAN, OliveColor.GREEN, 2));

@@ -108,3 +108,16 @@ Again, key should be unique, but key pair value can be repeated. HashMap (.keySe
 ###Multithreading
 Running multiple tasks at the same time by code. This is called concerrency, concurrent operations that can
 execute simultaneously.
+
+###Sorting Algorithms
+####Insertion sort
+
+In the best case, where the array was already sorted, no element will need to be moved, so the algorithm will 
+just run through the array once and return the sorted array. The running time would be directly proportional to 
+the size of the input, so we can say it will take N time.
+
+However, we usually focus on the worst-case running time (computer scientists are pretty pessimistic). The worst 
+case for Insertion Sort occurs when the array is in reverse order. To insert each number, the algorithm will have 
+to shift over that number to the beginning of the array. Sorting the entire array of N numbers will therefore take 
+1+2+..N-1 operations, which is N(N-1)/2 (almost N^2). Computer scientists just round that up (pick the dominant term) 
+to N^2 and say that Insertion Sort is an " time" algorithm.

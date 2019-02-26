@@ -43,6 +43,7 @@ public class Basics {
         // assert throws exceptions when it is false but only on debug modes
         // Needs to be explicitly enabled with -ea in VM and not used as such
         // assert checkInput(s1 is integer: true/false);
+        // System.out.printf("%.6f",sumP1); for setPrecision on double
     }
 
     // result = testStatement ? value1 : value2; ternary example
