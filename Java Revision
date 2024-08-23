@@ -1,0 +1,110 @@
+Java Revision
+
+Book 1:
+
+Properties of Object:
+Object instanceOf Class: Instance of checks whether object is of type. Object is an instance of Class Class.
+toString()
+equals()
+getClass(): returns the Class class object of this object
+hashCode(): returns the hashcode number for this object
+
+
+Iteration in Java
+
+switch () { case "A": break; case "B": default: break; }
+for(Iterator<String> i = myList.iterator(); i.hasNext();)
+for (String val : myList) // list is not modified
+continue // Skip remaining statements and go to next
+
+Iteration in Lists:
+
+ListIterator<String> iterator = list.listIterator();
+while(iterator.hasNext()) { System.out.println(iterator.next()); }
+
+for(String a: list) {}
+
+
+Array
+
+length
+Declaration: int intArray[] = new int[]; 
+int intArray[] = {4, 8, 107} 
+int intArray[] = new int[3]; 
+int intArray[] = new int[2][3]; 
+int intArray[] = new int[6][];
+String objArray[] = new String[] {"", "", ""};
+int[] multiArray[];
+
+
+String:
+length()
+charAt(0-n)
+indexOf('') ("") ('', 2)
+replace('','') or ("","")
+substring(2) (2,4) Oracle: acle, ac (end not counted)
+trim() - leading and trailing whitespace
+startsWith() endsWith() "", ''
+valueOf(int, boolean, char, long, float, Object) 
+// for integer conversion, also used for Wrapper string/datatype
+
+StringBuilder () (50) (String)
+String is immutable so StringBuilder helps modify Strings
+
+append() "", '', int, double, (String, 1,3) 3 included
+insert(1, String, 1,3) 3 included
+delete(2,4) 4 excluded
+reverse()
+replace(2,4, String) 4 included
+subsequence(2,4) 4 excluded
+
+
+ArrayList:
+maintains order, null can be added, duplicates are fine
+List operations: 
+add() "", (2,"") 
+set(1, "") 
+remove() int index, Object o (1st occurence)
+size()
+get()
+addAll(Collection), addAll(index, Collection)
+clear()
+indexOf(Object) lastIndexOf(Object) -1
+
+
+Inheritance:
+this, super
+default, protected and public are inherited by children 
+Duck extends Bird : Syntax
+Multiple inheritance not allowed. Dog cannot inherit from Animal and Mammal because same function cannot be inherited from multiple places. Hence not allowed
+
+
+Interface:
+Duck implements Bird 
+All members public 
+Can define constants nothing else 
+Multiple inheritance allowed
+Interfaces allow common code for both manager and programmer by allowing definition for employee
+
+employee[] -> 1. Manager, 2. Programmer
+abstract class: no instance, Employee: Manager/Programmer
+
+
+Checked exceptions need not be specified in try catch method signature
+custom: extends exception
+
+
+Book 2:
+
+Top level class, interface, enum cannot be private or protected
+Method parameters and local variables cannot have access modifiers
+
+
+Overloading:
+Change in parameter number
+Change in method parameter
+Change in position of parameter
+Cannot for return type or access modifier or non access modifier (synchronised or final are non-access types)
+
+HashMap
+containsKey(n)
